@@ -1,7 +1,7 @@
 extends Node2D
 
 func _ready() -> void:
-	if ServerDataManagement.is_host:
-		MpServer.host()
+	if SDM.is_host:
+		Network.host()
 	else:
-		MpServer.join("localhost")
+		Network.join("localhost")

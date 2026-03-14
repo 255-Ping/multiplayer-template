@@ -11,8 +11,8 @@ var players = []
 
 func host(port := 7777):
 	print("Attempting to create server on port: ", port)
-	ServerDataManagement.server_ip = "localhost"
-	ServerDataManagement.server_port = port
+	SDM.server_ip = "localhost"
+	SDM.server_port = port
 	peer = ENetMultiplayerPeer.new()
 
 	var err = peer.create_server(port)
@@ -38,8 +38,8 @@ func join(ip, port := 7777):
 		print("Host cannot join servers")
 		return
 	print("Attempting to connect to: ", ip,":",port)
-	ServerDataManagement.server_ip = ip
-	ServerDataManagement.server_port = port
+	SDM.server_ip = ip
+	SDM.server_port = port
 	peer = ENetMultiplayerPeer.new()
 
 	var err = peer.create_client(ip, port)

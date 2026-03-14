@@ -10,16 +10,16 @@ config_version=5
 
 [application]
 
-config/name="Multiplayer-Test"
+config/name="Multiplayer-Template"
 run/main_scene="uid://befthxos3pg6c"
 config/features=PackedStringArray("4.6", "GL Compatibility")
 config/icon="res://icon.svg"
 
 [autoload]
 
-MpServer="*uid://bn511q10gfgam"
+Network="*uid://bn511q10gfgam"
 SceneLoader="*uid://m85f3c35vh7o"
-ServerDataManagement="*uid://c45my706b3x84"
+SDM="*uid://c45my706b3x84"
 
 [display]
 
