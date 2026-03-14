@@ -13,7 +13,8 @@ Then `import` the project in godot.
 
 ### Scripts
 
-`network_manager.gd` or `Network` handles hosting the server and client
+`network_manager.gd` or `Network` handles hosting the server and client.
+
 `server_data_management.gd` or `SDM` is useful for making data persist between `get_tree().current_scene` changes.
 
 ### Functions
