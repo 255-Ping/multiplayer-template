@@ -1,0 +1,25 @@
+[gd_scene format=3 uid="uid://befthxos3pg6c"]
+
+[ext_resource type="Script" uid="uid://wuqpkv14t88s" path="res://scripts/main.gd" id="1_0wfyh"]
+
+[node name="main" type="Node2D" unique_id=962875341]
+script = ExtResource("1_0wfyh")
+
+[node name="HostButton" type="Button" parent="." unique_id=1599956518]
+offset_left = 5.0
+offset_top = 4.0
+offset_right = 48.0
+offset_bottom = 35.0
+scale = Vector2(3, 3)
+text = "host"
+
+[node name="JoinButton" type="Button" parent="." unique_id=765123723]
+offset_left = 5.0
+offset_top = 102.00001
+offset_right = 42.0
+offset_bottom = 133.0
+scale = Vector2(3, 3)
+text = "join"
+
+[connection signal="pressed" from="HostButton" to="." method="_on_host_button_pressed"]
+[connection signal="pressed" from="JoinButton" to="." method="_on_join_button_pressed"]

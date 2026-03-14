@@ -1,0 +1,8 @@
+[gd_scene format=3 uid="uid://cdurram825cl3"]
+
+[ext_resource type="Script" uid="uid://domj0t8amlbbh" path="res://scripts/overworld.gd" id="1_m1b5j"]
+
+[node name="Overworld" type="Node2D" unique_id=1504864777]
+script = ExtResource("1_m1b5j")
+
+[node name="Players" type="Node" parent="." unique_id=2050975845]
