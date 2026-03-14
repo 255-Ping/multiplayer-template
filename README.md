@@ -11,12 +11,12 @@ Then `import` the project in godot.
 
 ## Useful Information
 
-###Scripts
+### Scripts
 
 `network_manager.gd` or `Network` handles hosting the server and client
 `server_data_management.gd` or `SDM` is useful for making data persist between `get_tree().current_scene` changes.
 
-###Functions
+### Functions
 
 - `host(port)`: Starts and hosts a server, default port is `7777`. Also spawns host player.
 - `join(ip, port)`: Joins a server with the given ip and port.
